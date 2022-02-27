@@ -1,0 +1,25 @@
+{
+  "name": "@fjborquez/sethttppoliciesmiddleware",
+  "version": "1.0.0",
+  "description": "This library adds http politices headers to http request in expressjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fjborquez/sethttppoliciesmiddleware.git"
+  },
+  "keywords": [
+    "http",
+    "policies",
+    "middleware",
+    "expressjs"
+  ],
+  "author": "Francisco Borquez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fjborquez/sethttppoliciesmiddleware/issues"
+  },
+  "homepage": "https://github.com/fjborquez/sethttppoliciesmiddleware#readme"
+}
