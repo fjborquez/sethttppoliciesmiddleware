@@ -4,7 +4,7 @@
   "description": "This library adds http politices headers to http request in expressjs",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./node_modules/.bin/nyc --reporter=lcov ./node_modules/.bin/mocha --recursive ./test/"
   },
   "repository": {
     "type": "git",
@@ -24,5 +24,11 @@
   "homepage": "https://github.com/fjborquez/sethttppoliciesmiddleware#readme",
   "dependencies": {
     "@fjborquez/httppolicies": "^1.0.1"
+  },
+  "devDependencies": {
+    "chai": "^4.3.6",
+    "mocha": "^9.2.1",
+    "nyc": "^15.1.0",
+    "sinon": "^13.0.1"
   }
 }
