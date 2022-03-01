@@ -19,5 +19,3 @@ const httppolicyfactory = require('@fjborquez/httppolicies');
         return (req, res, next) => setPolicyHeader(options, req, res, next)
     };
 })();
-
-// TODO: add a test for this middleware
