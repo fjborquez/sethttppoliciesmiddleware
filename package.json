@@ -1,6 +1,6 @@
 {
   "name": "@fjborquez/sethttppoliciesmiddleware",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "This library adds http politices headers to http request in expressjs",
   "main": "index.js",
   "scripts": {
