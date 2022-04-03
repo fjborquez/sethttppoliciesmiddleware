@@ -11,15 +11,14 @@ describe('setHttpPoliciesMiddleware', function() {
 
     describe('request handler calling', function() {
         it('should call next() and res.set() once', function() {
-            const option = {
-                policy: 'coep',
-            };
+            const policy = 'coep';
+            
             const nextSpy = sinon.spy();
             const res = {
                 'set': sinon.spy(),
             };
             
-            const factory = middleware(option)({}, res, nextSpy);
+            const factory = middleware(policy)({}, res, nextSpy);
             expect(nextSpy.calledOnce).to.be.true;
             expect(res.set.calledOnce).to.be.true;
         });

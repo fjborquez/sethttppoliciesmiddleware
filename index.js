@@ -1,10 +1,9 @@
-const httppolicyfactory = require('@fjborquez/httppolicies');
-
 (function() {
     var policy = {};
+    const httpPoliciesManager = require('@fjborquez/httppolicies');
 
     function setPolicyHeader(options, req, res, next) {
-        policy = httppolicyfactory(options);
+        policy = httpPoliciesManager.createPolicyInstance(options);
         res.set(createHeader(options, policy));
         next();
     }
